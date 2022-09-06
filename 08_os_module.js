@@ -14,6 +14,6 @@ const info = {
 };
 
 console.log(info);
-// console.log(userInfo());
+console.log(userInfo());
 // method returns the system uptime in seconds
 console.log(`The sysytem uptime is ${uptime()} seconds`);

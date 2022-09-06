@@ -11,7 +11,7 @@ readFile('./content/first.txt', 'utf-8', (err, result) => {
   readFile('./content/second.txt', 'utf-8', (err, result) => {
     if (err) {
       console.log(err);
-      return null;
+      return;
     }
     const second = result;
     writeFile(
@@ -21,7 +21,7 @@ readFile('./content/first.txt', 'utf-8', (err, result) => {
       (err, result) => {
         if (err) {
           console.log(err);
-          return null;
+          return;
         }
         console.log('done with this task');
       }
