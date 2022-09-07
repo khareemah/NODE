@@ -14,6 +14,8 @@ const start = async () => {
   }
 };
 start();
+//refactor promise to async and await
+
 // const start = async () => {
 //   try {
 //     const first = await getText('../content/first.txt');
@@ -29,18 +31,6 @@ start();
 //   } catch (error) {
 //     console.log(error);
 //   }
-// };
-
-// const getText = (path) => {
-//   return new Promise((resolve, reject) => {
-//     readFile(path, 'utf-8', (error, res) => {
-//       if (error) {
-//         reject(error);
-//       } else {
-//         resolve(res);
-//       }
-//     });
-//   });
 // };
 
 // using the good old promises
